@@ -1,10 +1,11 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const items = [
-  { icon: "🧠", title: "Concept Clarity", desc: "Build strong fundamentals with structured lessons." },
-  { icon: "💬", title: "Doubt Solving", desc: "Get your questions answered promptly." },
-  { icon: "📈", title: "Regular Assessments", desc: "Track progress with tests and feedback." },
-  { icon: "🤝", title: "Personal Attention", desc: "Small batches for individual focus." },
+  { icon: "", title: "Strong Foundation", desc: "Clear concepts and structured lessons for confident learners." },
+  { icon: "", title: "Doubt Solving", desc: "Every question is answered with patience and clarity." },
+  { icon: "", title: "Regular Feedback", desc: "Progress reports and communication with parents." },
+  { icon: "", title: "Personalised Attention", desc: "Small groups and one-to-one focus where needed."},
+  { icon: "", title: "Comfortable Environment", desc: "Friendly, safe, and encouraging learning atmosphere."}
 ];
 
 export default function WhyUs() {
@@ -13,7 +14,7 @@ export default function WhyUs() {
     <section id="why" className="py-20 bg-white">
       <div className="container">
         <div className="mb-10 text-center">
-          <p className="text-sm font-medium text-accent">Why Students Love Bright Minds Tuition</p>
+          <p className="text-sm font-medium text-accent">Why Parents Trust Vatyani Tuition Center</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold">Why Choose Us</h2>
         </div>
         <div ref={ref} className="grid gap-6 md:grid-cols-4">
