@@ -1,9 +1,9 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const groups = [
-  { title: "Classes 6–8", items: ["Science", "Maths", "English"] },
-  { title: "Classes 9–10", items: ["Physics", "Chemistry", "Maths", "English"] },
-  { title: "Classes 11–12", items: ["Physics", "Chemistry", "Maths"] },
+  { title: "Classes 1–2", items: ["English (Reading , Writing , Grammer)", "Mathematics", "Environmental Studies", "Hindi (Reading & Writing)"] },
+  { title: "Classes 3–5", items: ["Mathematics", "English", "Science", "Hindi","General Studies"] },
+
 ];
 
 export default function Classes() {
