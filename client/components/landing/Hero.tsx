@@ -6,9 +6,10 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary to-white" />
       <div className="container py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <p className="text-sm font-medium text-accent mb-3">Bright Minds Tuition</p>
-          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight">Empowering Students to Learn, Grow & Excel.</h1>
-          <p className="mt-4 text-muted-foreground max-w-prose">Personalized tuition for Classes 6–12 in Maths, Science, and English. Clear concepts, regular assessments, and personal attention.</p>
+          <p className="text-sm font-medium text-accent mb-3">Vatyani Tuition Center</p>
+          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight">Nurturing Young Minds to Learn, Grow & Shine.</h1>
+          <p className="mt-4 text-muted-foreground max-w-prose">Personalized tuition for Classes 1–5 in Maths, English, Science, and Hindi.
+Clear concepts, caring guidance, and regular progress tracking to build a strong academic foundation.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#contact" className="btn-pill bg-accent text-white shadow-soft inline-flex items-center gap-2">
               Enroll Now <ArrowRight size={18} />
