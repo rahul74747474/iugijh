@@ -17,7 +17,7 @@ export default function WhyUs() {
           <p className="text-sm font-medium text-accent">Why Parents Trust Vatyani Tuition Center</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold">Why Choose Us</h2>
         </div>
-        <div ref={ref} className="grid gap-6 md:grid-cols-4">
+        <div ref={ref} className="grid gap-6 md:grid-cols-5">
           {items.map((it) => (
             <div key={it.title} className="rounded-2xl border bg-secondary p-6 text-center card-hover">
               <div className="text-3xl">{it.icon}</div>
