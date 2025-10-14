@@ -15,7 +15,7 @@ export default function Classes() {
           <p className="text-sm font-medium text-accent">What We Teach</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold">Classes & Subjects</h2>
         </div>
-        <div ref={ref} className="grid gap-6 md:grid-cols-3">
+        <div ref={ref} className="grid gap-6 md:grid-cols-2">
           {groups.map((g) => (
             <div key={g.title} className="rounded-2xl border bg-white p-6 card-hover">
               <h3 className="font-semibold text-lg">{g.title}</h3>
