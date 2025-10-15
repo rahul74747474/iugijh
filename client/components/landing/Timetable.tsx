@@ -11,17 +11,17 @@ export default function Timetable() {
         </div>
         <div ref={ref} className="rounded-2xl border overflow-hidden">
           <div className="grid grid-cols-4 bg-secondary text-sm font-medium">
-            <div className="p-3">Batch</div>
+    
             <div className="p-3">Days</div>
             <div className="p-3">Time</div>
-            <div className="p-3">Class</div>
+          
           </div>
-          {[{b:"Alpha",d:"Mon, Wed, Fri",t:"5:00–6:30 PM",c:"6–8"},{b:"Sigma",d:"Tue, Thu, Sat",t:"6:45–8:15 PM",c:"9–10"},{b:"Omega",d:"Sat, Sun",t:"9:00–11:00 AM",c:"11–12"}].map((r,i)=> (
+          {[{d:"Mon , Tue , Wed, Thur , Fri , Sat",t:"10:00–12:30 AM | 5:00-8:00 PM"}].map((r,i)=> (
             <div key={i} className="grid grid-cols-4 border-t text-sm">
-              <div className="p-3">{r.b}</div>
+            
               <div className="p-3">{r.d}</div>
               <div className="p-3">{r.t}</div>
-              <div className="p-3">{r.c}</div>
+        
             </div>
           ))}
         </div>
