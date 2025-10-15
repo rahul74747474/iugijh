@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t py-4 text-center text-xs text-muted-foreground">© 2025 Bright Minds Tuition • All rights reserved • <a href="#" className="underline hover:text-accent">Privacy Policy</a></div>
+      <div className="border-t py-4 text-center text-xs text-muted-foreground">© 2025 Vatyani Tuition Center • All rights reserved • </div>
     </footer>
   );
 }
