@@ -14,7 +14,7 @@ function Navbar() {
     <header className={cn("sticky top-0 z-40 w-full transition-all", scrolled ? "backdrop-blur bg-white/70 border-b" : "bg-transparent")}> 
       <div className="container flex h-16 items-center justify-between">
         <a href="#hero" className="flex items-center gap-2 font-display text-lg font-semibold">
-        <img src="https://i.ibb.co/0pyZ39sC/IMG-20251015-173643.jpg" alt="Bright Minds Tuition" className="h-10 w-auto" />
+        <img src="https://i.ibb.co/n8LWSgWR/IMG-20251015-173643-removebg-preview.png" alt="Bright Minds Tuition" className="h-10 w-auto" />
         
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -41,8 +41,8 @@ function Footer() {
       <div className="container py-10 grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 font-display text-lg font-semibold">
-            <span className="inline-block h-8 w-8 rounded-xl bg-accent" />
-            <span>Bright Minds Tuition</span>
+            <img src="https://i.ibb.co/n8LWSgWR/IMG-20251015-173643-removebg-preview.png" alt="Bright Minds Tuition" className="h-8 w-auto" />
+        
           </div>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">Empowering students to learn, grow, and excel through concept clarity, personal attention, and consistent assessments.</p>
         </div>
