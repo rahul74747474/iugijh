@@ -53,9 +53,8 @@ export default function Contact() {
           <div className="mt-6 grid gap-3 text-sm">
             <div><span className="font-medium">Email:</span> info@vatyanituition.center</div>
             <div><span className="font-medium">Phone:</span> +91 8384014981</div>
-            <div className="rounded-2xl border bg-white p-4 mt-4 text-center text-sm text-muted-foreground">
-              Google Map Placeholder
-            </div>
+            <div><span className="font-medium">Address:</span> 8119/7 Multani Dhanda,Paharganj,110055</div>
+            
           </div>
         </div>
         <form
