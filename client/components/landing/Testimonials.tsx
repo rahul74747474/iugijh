@@ -1,9 +1,9 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const quotes = [
-  { name: "Aarav, Class 10", text: "The concepts became crystal clear. My scores improved drastically!" },
-  { name: "Sara, Class 8", text: "I love the friendly environment and regular tests." },
-  { name: "Ritika, Class 12", text: "Personal attention helped me crack my boards with confidence." },
+  { name: "Parent of Grade 4 student", text: "My daughter has improved so much in Maths, thanks to Ms. Vatyani's patience & clear teaching." },
+  { name: "Student, Grade 3", text: "I love how every subject is taught - I don't have to go to different teachers." },
+  { name: "Student, Class 5", text: "Personal attention helped me excel in School exams with confidence." },
 ];
 
 export default function Testimonials() {
