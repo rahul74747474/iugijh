@@ -19,8 +19,7 @@ export default function Testimonials() {
           {quotes.map((q) => (
             <figure key={q.name} className="rounded-2xl border bg-white p-6 card-hover">
               <div className="flex items-center gap-3">
-                <img src="/placeholder.svg" alt="Student" className="h-10 w-10 rounded-full border" />
-                <figcaption className="font-medium">{q.name}</figcaption>
+                 <figcaption className="font-medium">{q.name}</figcaption>
               </div>
               <blockquote className="mt-3 text-sm text-muted-foreground">“{q.text}”</blockquote>
             </figure>
