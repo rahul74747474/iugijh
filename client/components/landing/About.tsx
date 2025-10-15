@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="py-20 bg-white">
       <div className="container grid md:grid-cols-2 gap-10 items-center">
         <div ref={ref}>
-          <img src="/placeholder.svg" alt="Tutor" className="rounded-3xl border shadow-soft" />
+          <img src="https://i.ibb.co/1G0c1BpF/Gemini-Generated-Image-zcdijmzcdijmzcdi.png" alt="Tutor" className="rounded-3xl border shadow-soft" />
         </div>
         <div className="reveal" ref={useReveal<HTMLDivElement>()}>
           <p className="text-sm font-medium text-accent mb-2">Meet Our Master Teacher</p>
