@@ -51,8 +51,8 @@ export default function Contact() {
             Fill the form and we'll reach out shortly. You can also call or email us directly.
           </p>
           <div className="mt-6 grid gap-3 text-sm">
-            <div><span className="font-medium">Email:</span> info@brightminds.tuition</div>
-            <div><span className="font-medium">Phone:</span> +00 0000 0000</div>
+            <div><span className="font-medium">Email:</span> info@vatyanituition.center</div>
+            <div><span className="font-medium">Phone:</span> +91 8384014981</div>
             <div className="rounded-2xl border bg-white p-4 mt-4 text-center text-sm text-muted-foreground">
               Google Map Placeholder
             </div>
