@@ -19,7 +19,7 @@ Clear concepts, caring guidance, and regular progress tracking to build a strong
         </div>
         <div className="relative">
           <div className="relative rounded-3xl bg-white p-3 shadow-soft">
-            <img src="/placeholder.svg" alt="Students studying" className="h-auto w-full rounded-2xl object-cover" />
+            <img src="https://i.ibb.co/6RdDmjm7/unnamed-1.jpg" alt="Students studying" className="h-auto w-full rounded-2xl object-cover" />
           </div>
           <div className="absolute -bottom-6 -left-6 -z-10 h-40 w-40 rounded-3xl bg-accent/20 blur-2xl" />
           <div className="absolute -top-8 -right-8 -z-10 h-40 w-40 rounded-3xl bg-primary/80 blur-2xl" />
