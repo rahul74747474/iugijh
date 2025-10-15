@@ -59,12 +59,9 @@ function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Contact</h4>
           <div className="space-y-2 text-sm">
-            <a href="mailto:info@brightminds.tuition" className="flex items-center gap-2 hover:text-accent"><Mail size={16}/> info@brightminds.tuition</a>
-            <a href="tel:+0000000000" className="flex items-center gap-2 hover:text-accent"><Phone size={16}/> +00 0000 0000</a>
-            <div className="flex items-center gap-3 pt-2">
-              <a aria-label="Instagram" href="#" className="p-2 rounded-full border hover:bg-secondary"><Instagram size={18} /></a>
-              <a aria-label="WhatsApp" href="#" className="p-2 rounded-full border hover:bg-secondary"><MessageCircle size={18} /></a>
-            </div>
+            <a href="mailto:info@vatyanituition.center" className="flex items-center gap-2 hover:text-accent"><Mail size={16}/> info@vatyanituition.center</a>
+            <a href="tel:+918384014981" className="flex items-center gap-2 hover:text-accent"><Phone size={16}/> +91 8384014981</a>
+          
           </div>
         </div>
       </div>
@@ -99,7 +96,7 @@ function WhatsAppButton() {
   return (
     <a
       aria-label="Chat on WhatsApp"
-      href="https://wa.me/0000000000"
+      href="https://wa.me/9717402437"
       target="_blank"
       rel="noreferrer"
       className="fixed bottom-24 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-green-500 text-white shadow-soft hover:bg-green-600"
