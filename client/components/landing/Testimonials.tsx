@@ -1,10 +1,5 @@
-
 import { useReveal } from "@/hooks/use-reveal";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useState, useEffect } from "react";
 
 const quotes = [
   { name: "Aarav, Class 1", text: "I love how easy the lessons are! I can read faster now." },
@@ -41,6 +36,24 @@ const quotes = [
 
 export default function Testimonials() {
   const ref = useReveal<HTMLDivElement>();
+  const [slideIndex, setSlideIndex] = useState(0);
+  const testimonialsPerSlide = 3;
+  const totalSlides = Math.ceil(quotes.length / testimonialsPerSlide);
+
+  const prevSlide = () => setSlideIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+  const nextSlide = () => setSlideIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentQuotes = quotes.slice(
+    slideIndex * testimonialsPerSlide,
+    slideIndex * testimonialsPerSlide + testimonialsPerSlide
+  );
 
   return (
     <section id="testimonials" className="py-20 bg-primary/40">
@@ -50,38 +63,47 @@ export default function Testimonials() {
           <h2 className="font-display text-3xl md:text-4xl font-bold">Testimonials</h2>
         </div>
 
-        <div ref={ref}>
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3500, disableOnInteraction: false }}
-            loop
-          >
-            {quotes.map((q, index) => (
-              <SwiperSlide key={index}>
-                <figure className="rounded-2xl border bg-white p-6 card-hover h-full flex flex-col justify-between">
-                  <div>
-                    <figcaption className="font-medium">{q.name}</figcaption>
-                    <blockquote className="mt-3 text-sm text-muted-foreground">
-                      “{q.text}”
-                    </blockquote>
-                  </div>
-                </figure>
-              </SwiperSlide>
+        <div ref={ref} className="relative">
+          <div className="grid gap-6 md:grid-cols-3">
+            {currentQuotes.map((q, index) => (
+              <figure
+                key={index}
+                className="rounded-2xl border bg-white p-6 card-hover h-full flex flex-col justify-between"
+              >
+                <div>
+                  <figcaption className="font-medium">{q.name}</figcaption>
+                  <blockquote className="mt-3 text-sm text-muted-foreground">
+                    “{q.text}”
+                  </blockquote>
+                </div>
+              </figure>
             ))}
-          </Swiper>
+          </div>
+
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-0 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
+          >
+            ‹
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-0 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100"
+          >
+            ›
+          </button>
+        </div>
+
+        <div className="mt-6 flex justify-center gap-2">
+          {Array.from({ length: totalSlides }).map((_, i) => (
+            <span
+              key={i}
+              className={`w-3 h-3 rounded-full ${i === slideIndex ? "bg-accent" : "bg-gray-300"}`}
+            ></span>
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
 
