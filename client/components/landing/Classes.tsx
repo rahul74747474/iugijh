@@ -1,7 +1,7 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const groups = [
-  { title: "Classes 1–2", items: ["English (Reading , Writing , Grammer)", "Mathematics", "Environmental Studies", "Hindi (Reading & Writing)"] },
+  { title: "Classes 1–2", items: ["English (Reading , Writing , Grammar)", "Mathematics", "Environmental Studies", "Hindi (Reading & Writing)"] },
   { title: "Classes 3–5", items: ["Mathematics", "English", "Science", "Hindi","General Studies"] },
 
 ];
